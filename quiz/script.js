@@ -73,7 +73,7 @@ nextBtn.addEventListener(
         } else {
             //display questionCount
             countOfQuestion.innerHTML =
-                questionCount + 1 + " of " + quizArray.length + " Question";
+                questionCount + 1 + " de " + quizArray.length + " questões";
             //display quiz
             quizDisplay(questionCount);
             count = 16;
