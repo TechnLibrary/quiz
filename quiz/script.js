@@ -19,62 +19,33 @@ let countdown;
 const quizArray = [
     {
         id: "0",
-        question: "Which is the most widely spoken language in the world?",
-        options: ["Spanish", "Mandarin", "English", "German"],
-        correct: "Mandarin",
+        question: "Quando foi criada a lei Maria da Penha?",
+        options: ["5 de março de 2005", "7 de agosto de 2006", "3 de julho de 2007"],
+        correct: "7 de agosto de 2006",
     },
     {
         id: "1",
-        question: "Which is the only continent in the world without a desert?",
-        options: ["North America", "Asia", "Africa", "Europe"],
-        correct: "Europe",
+        question: "Em 1988, qual foi o nome dado às mulheres que participavam da Assembleia Constituinte",
+        options: ["Bancada dos Direitos das Mulheres", "Lobby do Batom", "Lobby Feminino"],
+        correct: "Lobby do Batom",
     },
     {
         id: "2",
-        question: "Who invented Computer?",
-        options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
-        correct: "Charles Babbage",
+        question: "O que é a Lei Maria da Penha?",
+        options: ["Lei que combate o assédio em ambiente de trabalho.", "Lei que garante salários iguais entre homens e mulheres.", "Lei que configura crime a violência doméstica e intrafamiliar."],
+        correct: "Lei que configura crime a violência doméstica e intrafamiliar.",
     },
     {
         id: "3",
-        question: "What do you call a computer on a network that requests files from another computer?",
-        options: ["A client", "A host", "A router", "A web server"],
-        correct: "A client",
+        question: "Qual das afirmativas é falsa?",
+        options: ["Homens e mulheres na mesma função devem receber salários iguais.", "Existe uma cota de 30% do Fundo Eleitoral para candidaturas de mulheres.", "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento."],
+        correct: "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento.",
     },
     {
         id: "4",
-        question: "Hardware devices that are not part of the main computer system and are often added later to the system.",
-        options: ["Peripheral", "Clip art", "Highlight", "Execute"],
-        correct: "Peripheral",
-    },
-    {
-        id: "5",
-        question: "The main computer that stores the files that can be sent to computers that are networked together is:",
-        options: ["Clip art", "Mother board", "Peripheral", "File server"],
-        correct: "File server",
-    }, {
-        id: "6",
-        question: "How can you catch a computer virus?",
-        options: ["Sending e-mail messages", "Using a laptop during the winter", "Opening e-mail attachments", "Shopping on-line"],
-        correct: "Opening e-mail attachments",
-    },
-    {
-        id: "7",
-        question: "Google (www.google.com) is a:",
-        options: ["Search Engine", "Number in Math", "Directory of images", "Chat service on the web"],
-        correct: "Search Engine",
-    },
-    {
-        id: "8",
-        question: "Which is not an Internet protocol?",
-        options: ["HTTP", "FTP", "STP", "IP"],
-        correct: "STP",
-    },
-    {
-        id: "9",
-        question: "Which of the following is not a valid domain name?",
-        options: ["www.yahoo.com", "www.yahoo.co.uk", "www.com.yahoo", "www.yahoo.co.in"],
-        correct: "www.com.yahoo",
+        question: "Em que ano foi aprovada a Lei do Feminicídio?",
+        options: ["2010", "2015", "2017"],
+        correct: "2015",
     },
 ];
 
@@ -98,7 +69,7 @@ nextBtn.addEventListener(
             scoreContainer.classList.remove("hide");
             //user score
             userScore.innerHTML =
-                "Your score is " + scoreCount + " out of " + questionCount;
+                "Você acertou " + scoreCount + " de " + questionCount + " questões.";
         } else {
             //display questionCount
             countOfQuestion.innerHTML =
@@ -147,7 +118,7 @@ function quizCreator() {
         let div = document.createElement("div");
         div.classList.add("container-mid", "hide");
         //question number
-        countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
+        countOfQuestion.innerHTML = 1 + " de " + quizArray.length + " questões";
         //question
         let question_DIV = document.createElement("p");
         question_DIV.classList.add("question");
@@ -158,7 +129,6 @@ function quizCreator() {
     <button class="option-div" onclick="checker(this)">${i.options[0]}</button>
      <button class="option-div" onclick="checker(this)">${i.options[1]}</button>
       <button class="option-div" onclick="checker(this)">${i.options[2]}</button>
-       <button class="option-div" onclick="checker(this)">${i.options[3]}</button>
     `;
         quizContainer.appendChild(div);
     }
