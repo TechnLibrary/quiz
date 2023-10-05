@@ -8,7 +8,6 @@ This website is designed to provide an interactive quiz experience. Users can an
 
 ## Features
 
-- Multiple-choice questions
 - Immediate feedback on correct/incorrect answers
 - Score tracking
 - Interactive and user-friendly interface
@@ -16,9 +15,9 @@ This website is designed to provide an interactive quiz experience. Users can an
 ## How to Use
 
 1. Clone or download the repository to your local machine.
-2. Open the `index.html` file in your web browser.
+2. Open the `main.html` file in your web browser.
 3. Start the quiz and answer the questions.
-4. After completing the quiz, see your score and review your answers.
+4. After completing the quiz, see your score.
 
 ## Credits
 
