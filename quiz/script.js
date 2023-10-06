@@ -19,15 +19,15 @@ let countdown;
 const quizArray = [
     {
         id: "0",
-        question: "Quando foi criada a lei Maria da Penha?",
-        options: ["5 de março de 2005", "7 de agosto de 2006", "3 de julho de 2007"],
-        correct: "7 de agosto de 2006",
+        question: "Quando foi criada a Lei Maria da Penha?",
+        options: ["5 de março de 2005.", "7 de agosto de 2006.", "3 de julho de 2007."],
+        correct: "7 de agosto de 2006.",
     },
     {
         id: "1",
         question: "Em 1988, qual foi o nome dado às mulheres que participavam da Assembleia Constituinte",
-        options: ["Bancada dos Direitos das Mulheres", "Lobby do Batom", "Lobby Feminino"],
-        correct: "Lobby do Batom",
+        options: ["Bancada dos Direitos das Mulheres.", "Lobby do Batom ou Bancada do Batom.", "Lobby Feminino."],
+        correct: "Lobby do Batom ou Bancada do Batom.",
     },
     {
         id: "2",
@@ -38,14 +38,14 @@ const quizArray = [
     {
         id: "3",
         question: "Qual das afirmativas é falsa?",
-        options: ["Homens e mulheres na mesma função devem receber salários iguais.", "Existe uma cota de 30% do Fundo Eleitoral para candidaturas de mulheres.", "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento."],
+        options: ["Homens e mulheres na mesma função devem receber salários iguais.", "Existe uma cota de 30% do Fundo Eleitoral para financiamento para candidaturas de mulheres.", "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento."],
         correct: "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento.",
     },
     {
         id: "4",
         question: "Em que ano foi aprovada a Lei do Feminicídio?",
-        options: ["2010", "2015", "2017"],
-        correct: "2015",
+        options: ["2010.", "2015.", "2017."],
+        correct: "2015.",
     },
 ];
 
@@ -73,7 +73,7 @@ nextBtn.addEventListener(
         } else {
             //display questionCount
             countOfQuestion.innerHTML =
-                questionCount + 1 + " of " + quizArray.length + " Question";
+                questionCount + 1 + " de " + quizArray.length + " questões";
             //display quiz
             quizDisplay(questionCount);
             count = 16;
