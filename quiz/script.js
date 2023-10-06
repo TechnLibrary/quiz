@@ -38,7 +38,7 @@ const quizArray = [
     {
         id: "3",
         question: "Qual das afirmativas é falsa?",
-        options: ["Homens e mulheres na mesma função devem receber salários iguais.", "Existe uma cota de 30% do Fundo Eleitoral para financiamento para candidaturas de mulheres.", "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento."],
+        options: ["Homens e mulheres na mesma função devem receber salários iguais.", "Existe uma cota de 30% do Fundo Eleitoral para financiamento de candidaturas de mulheres.", "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento."],
         correct: "Em 2001, falta de virgindade das mulheres não era motivo para anular casamento.",
     },
     {
